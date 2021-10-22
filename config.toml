@@ -4,16 +4,28 @@ title = "Tristan Abbott"
 theme = "xmin"
 
 [[menu.main]]
-    name = "Home"
+    name = "Tristan Abbott"
     url = "/"
     weight = 1
 [[menu.main]]
     name = "Publications"
     url = "/publications/"
+    weight = 2
+[[menu.main]]
+    name = "Media"
+    url = "/media/"
     weight = 3
+[[menu.main]]
+    name = "CV"
+    url = "/doc/thabbott.pdf"
+    weight = 4
+[[menu.main]]
+    name = "Contact"
+    url = "/contact/"
+    weight = 5
 
 [params]
-    footer = "&copy; Tristan Abbott 2020 | [Accessibility](https://accessibility.mit.edu)"
+    footer = "&copy; Tristan Abbott 2021 | [Accessibility](https://accessibility.mit.edu)"
 
 [markup]
   [markup.goldmark]

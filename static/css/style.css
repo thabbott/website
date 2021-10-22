@@ -8,13 +8,27 @@ body {
 /* header and footer areas */
 .menu { padding: 0; }
 .menu li { display: inline-block; }
-.article-meta, .menu a {
+.menu { text-align: left }
+.menu li:first-child a { 
+  padding-left: 0;
+  font-weight: bold;
+  color: #003399
+}
+.menu a {
+  text-decoration: none;
+  padding: 10px;
+  color: #000
+}
+a {
+  color: #003399;
+}
+.article-meta {
   text-decoration: none;
   background: none;
   padding: 10px;
   border-radius: 5px;
 }
-.menu, .article-meta, footer { text-align: center; }
+.article-meta, footer { text-align: center; }
 .title { font-size: 1.1em; }
 footer a { text-decoration: none; }
 hr {
@@ -34,7 +48,6 @@ pre code { background: none; }
 
 /* misc elements */
 img, iframe, video { max-width: 100%; }
-main { hyphens: auto; }
 blockquote {
   background: #f9f9f9;
   border-left: 5px solid #ccc;
@@ -51,9 +64,9 @@ th, td { padding: 5px; }
 thead, tfoot, tr:nth-child(even) { background: #eee; }
 
 /* Rows and columns */
-div.col3 {
+div.col {
+    width: 30%;
     float: left;
-    width: 25%;
     min-height: 1px;
 }
 div.row:after {
