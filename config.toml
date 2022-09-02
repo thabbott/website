@@ -19,13 +19,9 @@ theme = "xmin"
     name = "CV"
     url = "/doc/thabbott.pdf"
     weight = 4
-[[menu.main]]
-    name = "Contact"
-    url = "/contact/"
-    weight = 5
 
 [params]
-    footer = "&copy; Tristan Abbott 2021 | [Accessibility](https://accessibility.mit.edu)"
+    footer = "&copy; Tristan Abbott 2022"
 
 [markup]
   [markup.goldmark]
