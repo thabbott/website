@@ -21,7 +21,7 @@ theme = "xmin"
     weight = 4
 
 [params]
-    footer = "&copy; Tristan Abbott 2022"
+    footer = ""
 
 [markup]
   [markup.goldmark]
