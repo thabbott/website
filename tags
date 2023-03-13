@@ -41,8 +41,8 @@
 404 Page not found | Tristan Abbott	public/404.html	/^    <title>404 Page not found | Tristan Abbott<\/title>$/;"	j
 Categories	public/categories/index.html	/^<h1>Categories<\/h1>$/;"	h
 Categories | Tristan Abbott	public/categories/index.html	/^    <title>Categories | Tristan Abbott<\/title>$/;"	j
-Compiling	content/wiki/am4_on_gaea.md	/^## Compiling$/;"	s	chapter:Running AM4 on Gaea
-Compiling	content/wiki/shield_on_gaea.md	/^## Compiling$/;"	s	chapter:Running SHiELD on Gaea
+Compiling	draft_content/wiki/am4_on_gaea.md	/^## Compiling$/;"	s	chapter:Running AM4 on Gaea
+Compiling	draft_content/wiki/shield_on_gaea.md	/^## Compiling$/;"	s	chapter:Running SHiELD on Gaea
 Contact | Tristan Abbott	public/contact/index.html	/^    <title>Contact | Tristan Abbott<\/title>$/;"	j
 Coriolis forces on a turntable	public/d3/coriolis.html	/^<h1>Coriolis forces on a turntable<\/h1>$/;"	h
 Coriolis forces on a turntable	public/d3/coriolis.html	/^<title>Coriolis forces on a turntable<\/title>$/;"	j
@@ -64,16 +64,16 @@ Publications | Tristan Abbott	public/publications/index.html	/^    <title>Public
 Research	content/research.md	/^# Research$/;"	c
 Research	public/research/index.html	/^<h1 id="research">Research<\/h1>$/;"	h
 Research | Tristan Abbott	public/research/index.html	/^    <title>Research | Tristan Abbott<\/title>$/;"	j
-Running	content/wiki/am4_on_gaea.md	/^## Running$/;"	s	chapter:Running AM4 on Gaea
-Running	content/wiki/shield_on_gaea.md	/^## Running$/;"	s	chapter:Running SHiELD on Gaea
-Running AM4 on Gaea	content/wiki/am4_on_gaea.md	/^# Running AM4 on Gaea$/;"	c
-Running SHiELD on Gaea	content/wiki/shield_on_gaea.md	/^# Running SHiELD on Gaea$/;"	c
-Running models	content/wiki/_index.md	/^## Running models$/;"	s	chapter:Wiki
+Running	draft_content/wiki/am4_on_gaea.md	/^## Running$/;"	s	chapter:Running AM4 on Gaea
+Running	draft_content/wiki/shield_on_gaea.md	/^## Running$/;"	s	chapter:Running SHiELD on Gaea
+Running AM4 on Gaea	draft_content/wiki/am4_on_gaea.md	/^# Running AM4 on Gaea$/;"	c
+Running SHiELD on Gaea	draft_content/wiki/shield_on_gaea.md	/^# Running SHiELD on Gaea$/;"	c
+Running models	draft_content/wiki/_index.md	/^## Running models$/;"	s	chapter:Wiki
 Second-level header	themes/xmin/exampleSite/content/post/2016-02-14-hello-markdown.md	/^## Second-level header$/;"	s	chapter:2. Sample Text
 Tags	public/tags/index.html	/^<h1>Tags<\/h1>$/;"	h
 Tags | Tristan Abbott	public/tags/index.html	/^    <title>Tags | Tristan Abbott<\/title>$/;"	j
 Third-level header	themes/xmin/exampleSite/content/post/2016-02-14-hello-markdown.md	/^### Third-level header$/;"	S	section:2. Sample Text""Second-level header
-Wiki	content/wiki/_index.md	/^# Wiki$/;"	c
+Wiki	draft_content/wiki/_index.md	/^# Wiki$/;"	c
 _Keep it simple, but not simpler_	themes/xmin/README.md	/^## _Keep it simple, but not simpler_$/;"	s	chapter:HUGO XMIN
 _Keep it simple, but not simpler_	themes/xmin/exampleSite/content/_index.markdown	/^## _Keep it simple, but not simpler_$/;"	s	chapter:HUGO XMIN
 a	public/css/style.css	/^a {$/;"	s
@@ -162,7 +162,7 @@ video	themes/xmin/static/css/style.css	/^img, iframe, video { max-width: 100%; }
 vis	public/d3/coriolis.html	/^    <div id="vis" style="text-align:center;"><\/div>$/;"	I
 vis	static/d3/coriolis.html	/^    <div id="vis" style="text-align:center;"><\/div>$/;"	I
 xhtml	public/sitemap.xml	/^  xmlns:xhtml="http:\/\/www.w3.org\/1999\/xhtml">$/;"	n	uri:http://www.w3.org/1999/xhtml
-xi	content/wiki/default.xml.compile_only.xml	/^<experimentSuite rtsVersion="4" xmlns:xi="http:\/\/www.w3.org\/2003\/XInclude">$/;"	n	uri:http://www.w3.org/2003/XInclude
+xi	draft_content/wiki/default.xml.compile_only.xml	/^<experimentSuite rtsVersion="4" xmlns:xi="http:\/\/www.w3.org\/2003\/XInclude">$/;"	n	uri:http://www.w3.org/2003/XInclude
 {{ . }}	themes/xmin/layouts/_default/single.html	/^{{ with .Params.author }}<h2 class="author">{{ . }}<\/h2>{{ end }}$/;"	i
 {{ .Date.Format "2006/01/02" }}	themes/xmin/layouts/_default/single.html	/^{{ if (gt .Params.date 0) }}<h2 class="date">{{ .Date.Format "2006\/01\/02" }}<\/h2>{{ end }}$/;"	i
 {{ .Title | markdownify }}	themes/xmin/layouts/_default/list.html	/^<h1>{{ .Title | markdownify }}<\/h1>$/;"	h
