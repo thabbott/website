@@ -1,5 +1,7 @@
 ---
 title: Home
+type: _default
+layout: single
 ---
 
 <div style="display: flex">

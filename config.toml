@@ -19,6 +19,10 @@ theme = "xmin"
     name = "CV"
     url = "/doc/thabbott.pdf"
     weight = 4
+# [[menu.main]]
+#     name = "Wiki"
+#     url = "/wiki/"
+#     weight = 5
 
 [params]
     footer = ""
@@ -27,3 +31,6 @@ theme = "xmin"
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
+  
+  [markup.highlight]
+    style = "vs"

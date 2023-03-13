@@ -1,0 +1,5 @@
+<div style="margin: auto; width=100%">
+{{ range where .Page.Pages ".Params.categories" "intersect" (slice .Params.category)}}
+<a href="{{ .Permalink }}">{{ .Title }}</a>
+{{ end }}
+</div>

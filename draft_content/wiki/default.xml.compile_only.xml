@@ -1,0 +1,215 @@
+<?xml version="1.0"?>
+
+<!--
+GFDL FAIR USE POLICY
+
+GFDL recognizes the essential nature of collaboration in the scientific
+enterprise, including the importance of novel application and analysis of our
+models. In order to maximize mutual benefit from collaboration, the use of
+experimental GFDL models** should be done in a manner that ensures that
+individuals involved in model development receive proper credit for their
+work; in order to minimize the potential for misapplication of experimental
+models, collaborations should actively engage model developers. Publication of
+results using experimental GFDL models should be done in consultation with
+scientists that participated in the model development. Consultation with GFDL
+model developers should occur before submission of publications based on
+experimental GFDL models, and should include agreement on the appropriate level
+of acknowledgment, co-authorship and participation by the model developers.
+Since experimental models have not been thoroughly vetted, experimental GFDL
+models and their output should be distributed only after consultation with the
+developers of the model. After a GFDL model has been described in a
+peer-reviewed publication it is no longer experimental, and results based on
+the model should cite the publication(s) describing the model.
+
+** "Experimental GFDL models" refers to models (e.g., a coupled climate model),
+model components (e.g., parameterization schemes), model configurations (e.g.,
+the specific arrangement and parameter settings of model components) arising
+from model development efforts at GFDL, but whose formulation and configuration
+have not yet been documented in the peer-reviewed literature, as well as outputs
+from integrations with these models.
+-->
+
+<experimentSuite rtsVersion="4" xmlns:xi="http://www.w3.org/2003/XInclude">
+
+  <!-- GFDL group. Should be changed to *your* group: gfdl_m, gfdl_o, etc. -->
+  <property name="GFDL_YGL" value="gfdl_m"/>
+
+  <!-- identifiers for source code versions -->
+  <property name="RELEASE" value="xanadu"/>
+  <property name="MOM6_RELEASE" value="dev/gfdl/2018.04.06"/>
+
+  <!-- identifier for FRE version -->
+  <property name="FRE_VERSION" value="bronx-19"/>
+
+  <!-- paths to XML and source files -->
+  <property name="FRE_STEM" value="am4/xanadu"/>
+  <property name="XMLDIR" value="xml"/>
+  <property name="FMS_COMP_EXP" value="default"/>
+
+  <setup>
+    <platform name="ncrc4.intel19">
+      <freVersion>$(FRE_VERSION)</freVersion>
+      <compiler type="intel" version="19.0.5.281" />
+      <project>$(GFDL_YGL)</project>
+      <directory stem="$(FRE_STEM)">
+         <src>$HOME/$(stem)/$(name)/src</src>
+      </directory>
+      <property name="F2003_FLAGS" value=" -DINTERNAL_FILE_NML "/>
+      <csh><![CDATA[
+        module load git
+        module load gcp
+        setenv KMP_STACKSIZE 512m
+        setenv NC_BLKSZ 1M
+        setenv OMP_SCHEDULE "static,1"
+      ]]></csh>
+    </platform>
+  </setup>
+  
+  <experiment name="$(FMS_COMP_EXP)">
+    
+    <description>
+      Build executable
+    </description>
+
+    <component name="fms" paths="FMS">
+      <description domainName="infrastructure" communityName="FMS" 
+		    communityVersion="$(RELEASE)" communityGrid=""/>
+      <source versionControl="git" root="https://github.com/NOAA-GFDL">
+        <codeBase version="$(RELEASE)"> FMS.git </codeBase>
+      </source>
+      <compile>
+        <cppDefs>$(F2003_FLAGS) -Duse_libMPI -Duse_netCDF </cppDefs>
+      </compile>
+    </component>
+
+    <component name="atmos_phys" requires="fms" 
+      paths="atmos_param atmos_shared">
+      <description domainName="" communityName="" 
+        communityVersion="$(RELEASE)" communityGrid=""/>
+        <source versionControl="git" root="http://gitlab.gfdl.noaa.gov/fms">
+          <codeBase version="master">atmos_shared.git atmos_param.git</codeBase>
+          <csh><![CDATA[
+            ( cd atmos_shared && git checkout  $(RELEASE) )
+            ( cd atmos_param  && git checkout  $(RELEASE) )
+          ]]>
+          </csh>
+        </source>
+      <compile>
+        <cppDefs>$(F2003_FLAGS) -DCLUBB </cppDefs>
+      </compile>
+    </component>
+
+    <component name="atmos_dyn" paths="atmos_drivers/coupled
+                                       atmos_cubed_sphere/driver/coupled
+                                       atmos_cubed_sphere/model
+                                       atmos_cubed_sphere/model_nh_null
+                                       atmos_cubed_sphere/tools
+                                       atmos_cubed_sphere/GFDL_tools"
+                                requires="fms atmos_phys">
+      <source versionControl="git" root="http://gitlab.gfdl.noaa.gov/fms">
+        <codeBase version="master">
+          atmos_drivers.git atmos_cubed_sphere.git
+        </codeBase>
+        <csh><![CDATA[
+          ( cd atmos_drivers && git checkout       $(RELEASE) )
+          ( cd atmos_cubed_sphere && git checkout  $(RELEASE) )
+         ]]>
+        </csh>
+      </source>
+      <compile>
+        <cppDefs>$(F2003_FLAGS) -DSPMD -DCLIMATE_NUDGE</cppDefs>
+      </compile>
+    </component>
+
+    <component name="ice_sis" requires="fms mom6" paths="ice_sis ice_param">
+      <description domainName="Sea Ice SIS" communityName="GFDL-SIS" 
+        communityVersion="$(RELEASE)" communityGrid="Tripolar"/>
+      <source versionControl="git" root="http://gitlab.gfdl.noaa.gov/fms">
+        <codeBase version="master"> ice_sis.git ice_param.git </codeBase>
+        <csh><![CDATA[
+          ( cd ice_sis    && git checkout $(RELEASE) )
+          ( cd ice_param  && git checkout $(RELEASE) )
+         ]]>
+        </csh>
+      </source>
+      <compile>
+        <cppDefs>$(F2003_FLAGS) -Duse_netCDF</cppDefs>
+      </compile>
+    </component>
+
+    <component name="land_lad2" requires="fms" paths="land_lad2">
+      <description domainName="LM3" communityName="land_lad2" 
+        communityVersion="dev/master" communityGrid=""/>
+      <source versionControl="git" root="http://gitlab.gfdl.noaa.gov/fms">
+        <codeBase version="master">land_lad2.git</codeBase>
+        <csh><![CDATA[
+          ( cd land_lad2 && git checkout $(RELEASE) )
+         ]]>
+        </csh>
+      </source>
+      <compile doF90Cpp="yes">
+       <cppDefs>$(F2003_FLAGS) -nostdinc</cppDefs>
+      </compile>
+    </component>
+
+    <component name="mom6" requires="fms" 
+      paths="mom6/src/MOM6/config_src/dynamic 
+             mom6/src/MOM6/config_src/coupled_driver 
+             mom6/src/MOM6/src/*/ 
+             mom6/src/MOM6/src/*/*/ 
+             ocean_shared/generic_tracers 
+             ocean_shared/mocsy/src">
+      <description domainName="Ocean" communityName="GFDL-MOM6" 
+        communityVersion="$(MOM6_RELEASE)" communityGrid="Tripolar"/>
+      <source versionControl="git" root="http://gitlab.gfdl.noaa.gov/fms">
+        <codeBase version="master"> ocean_shared.git </codeBase>
+        <csh><![CDATA[
+          git clone -b $(MOM6_RELEASE) https://github.com/NOAA-GFDL/MOM6-examples.git mom6
+          pushd mom6
+          git checkout $(MOM6_RELEASE)  #needed for older git on zeus
+          git submodule init src/MOM6 src/SIS2 src/icebergs tools/python/MIDAS
+          git clone --recursive https://github.com/NOAA-GFDL/MOM6.git src/MOM6
+          git clone             https://github.com/NOAA-GFDL/SIS2.git src/SIS2
+          git clone             https://github.com/NOAA-GFDL/icebergs.git src/icebergs
+          git submodule update #This gets the right version of submodules
+          popd
+
+          pushd mom6
+          set platform_domain = `perl -T -e "use Net::Domain(hostdomain) ; print hostdomain"`
+          if ("${platform_domain}" =~ *"fairmont.rdhpcs.noaa.gov"* ) then
+            ln -s /scratch4/GFDL/gfdlscr/pdata/gfdl_O/datasets/ .datasets
+          else if ("${platform_domain}" =~ *"ccs.ornl.gov"* ) then
+            ln -s /lustre/atlas/proj-shared/cli061/pdata/gfdl_O/datasets/ .datasets
+          else
+            ln -s /lustre/f2/pdata/gfdl/gfdl_O/datasets/ .datasets
+          endif
+          popd
+
+          test -e mom6/.datasets
+          if ($status != 0) then
+            echo ""; echo "" ; echo "   WARNING:  .datasets link in MOM6 examples directory is invalid"; echo ""; echo ""
+          endif
+
+        ]]></csh>
+      </source>
+      <compile>
+        <cppDefs><![CDATA[ $(F2003_FLAGS) -DMAX_FIELDS_=100 -DNOT_SET_AFFINITY -D_USE_MOM6_DIAG -D_USE_GENERIC_TRACER  -DUSE_PRECISION=2 -D_FILE_VERSION="'"`git-version-string $<`"'" ]]></cppDefs>
+        <makeOverrides>OPENMP=""</makeOverrides> <!-- openmp switch for MOM6 may cause crash -->
+      </compile>
+    </component>
+
+    <component name="coupler" paths="coupler"
+               requires="fms atmos_dyn atmos_phys land_lad2 ice_sis mom6 ">
+      <description domainName="FMS Coupler" communityName="coupler" 
+        communityVersion="$(RELEASE)" communityGrid=""/>
+      <source versionControl="git" root="https://github.com/NOAA-GFDL">
+        <codeBase version="$(RELEASE)"> coupler.git </codeBase>
+      </source>
+      <compile>
+        <cppDefs>$(F2003_FLAGS)</cppDefs>
+      </compile>
+    </component>
+
+  </experiment>
+
+</experimentSuite>

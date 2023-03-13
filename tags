@@ -1,0 +1,172 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_EXCMD	mixed	/number, pattern, mixed, or combineV2/
+!_TAG_OUTPUT_FILESEP	slash	/slash or backslash/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PATTERN_LENGTH_LIMIT	96	/0 for no limit/
+!_TAG_PROC_CWD	/Users/thabbott/Files/Website/thabbott.github.io/	//
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	5.9.0	/p5.9.20221023.0/
+.article-meta	public/css/style.css	/^.article-meta {$/;"	c
+.article-meta	public/css/style.css	/^.article-meta, footer { text-align: center; }$/;"	c
+.article-meta	static/css/style.css	/^.article-meta {$/;"	c
+.article-meta	static/css/style.css	/^.article-meta, footer { text-align: center; }$/;"	c
+.article-meta	themes/xmin/static/css/style.css	/^.article-meta, .menu a {$/;"	c
+.article-meta	themes/xmin/static/css/style.css	/^.menu, .article-meta, footer { text-align: center; }$/;"	c
+.captioned-video	public/css/fonts.css	/^.captioned-video {$/;"	c
+.captioned-video	public/css/style.css	/^.captioned-video {$/;"	c
+.captioned-video	static/css/fonts.css	/^.captioned-video {$/;"	c
+.captioned-video	static/css/style.css	/^.captioned-video {$/;"	c
+.menu	public/css/style.css	/^.menu { padding: 0; }$/;"	c
+.menu	public/css/style.css	/^.menu { text-align: left }$/;"	c
+.menu	static/css/style.css	/^.menu { padding: 0; }$/;"	c
+.menu	static/css/style.css	/^.menu { text-align: left }$/;"	c
+.menu	themes/xmin/static/css/style.css	/^.menu { padding: 0; }$/;"	c
+.menu	themes/xmin/static/css/style.css	/^.menu, .article-meta, footer { text-align: center; }$/;"	c
+.menu a	public/css/style.css	/^.menu a {$/;"	s
+.menu a	static/css/style.css	/^.menu a {$/;"	s
+.menu a	themes/xmin/static/css/style.css	/^.article-meta, .menu a {$/;"	s
+.menu li	public/css/style.css	/^.menu li { display: inline-block; font-size: 1.15em }$/;"	s
+.menu li	static/css/style.css	/^.menu li { display: inline-block; font-size: 1.15em }$/;"	s
+.menu li	themes/xmin/static/css/style.css	/^.menu li { display: inline-block; }$/;"	s
+.menu li:first-child a	public/css/style.css	/^.menu li:first-child a { $/;"	s
+.menu li:first-child a	static/css/style.css	/^.menu li:first-child a { $/;"	s
+.title	public/css/style.css	/^.title { font-size: 1.1em; }$/;"	c
+.title	static/css/style.css	/^.title { font-size: 1.1em; }$/;"	c
+.title	themes/xmin/static/css/style.css	/^.title { font-size: 1.1em; }$/;"	c
+1. Markdown or R Markdown	themes/xmin/exampleSite/content/post/2016-02-14-hello-markdown.md	/^# 1. Markdown or R Markdown$/;"	c
+2. Sample Text	themes/xmin/exampleSite/content/post/2016-02-14-hello-markdown.md	/^# 2. Sample Text$/;"	c
+404 Page not found | Tristan Abbott	public/404.html	/^    <title>404 Page not found | Tristan Abbott<\/title>$/;"	j
+Categories	public/categories/index.html	/^<h1>Categories<\/h1>$/;"	h
+Categories | Tristan Abbott	public/categories/index.html	/^    <title>Categories | Tristan Abbott<\/title>$/;"	j
+Compiling	content/wiki/am4_on_gaea.md	/^## Compiling$/;"	s	chapter:Running AM4 on Gaea
+Compiling	content/wiki/shield_on_gaea.md	/^## Compiling$/;"	s	chapter:Running SHiELD on Gaea
+Contact | Tristan Abbott	public/contact/index.html	/^    <title>Contact | Tristan Abbott<\/title>$/;"	j
+Coriolis forces on a turntable	public/d3/coriolis.html	/^<h1>Coriolis forces on a turntable<\/h1>$/;"	h
+Coriolis forces on a turntable	public/d3/coriolis.html	/^<title>Coriolis forces on a turntable<\/title>$/;"	j
+Coriolis forces on a turntable	static/d3/coriolis.html	/^<h1>Coriolis forces on a turntable<\/h1>$/;"	h
+Coriolis forces on a turntable	static/d3/coriolis.html	/^<title>Coriolis forces on a turntable<\/title>$/;"	j
+Custom layouts	themes/xmin/exampleSite/content/about.md	/^# Custom layouts$/;"	c
+Design philosophy	themes/xmin/exampleSite/content/about.md	/^# Design philosophy$/;"	c
+Fourth-level header	themes/xmin/exampleSite/content/post/2016-02-14-hello-markdown.md	/^#### Fourth-level header$/;"	t	subsection:2. Sample Text""Second-level header""Third-level header
+HUGO XMIN	themes/xmin/README.md	/^# HUGO XMIN$/;"	c
+HUGO XMIN	themes/xmin/exampleSite/content/_index.markdown	/^# HUGO XMIN$/;"	c
+Home | Tristan Abbott	public/index.html	/^    <title>Home | Tristan Abbott<\/title>$/;"	j
+In the media	content/media.md	/^# In the media$/;"	c
+In the media	public/media/index.html	/^<h1 id="in-the-media">In the media<\/h1>$/;"	h
+In the media | Tristan Abbott	public/media/index.html	/^    <title>In the media | Tristan Abbott<\/title>$/;"	j
+Other features	themes/xmin/exampleSite/content/about.md	/^# Other features$/;"	c
+Publications	content/publications.md	/^# Publications$/;"	c
+Publications	public/publications/index.html	/^<h1 id="publications">Publications<\/h1>$/;"	h
+Publications | Tristan Abbott	public/publications/index.html	/^    <title>Publications | Tristan Abbott<\/title>$/;"	j
+Research	content/research.md	/^# Research$/;"	c
+Research	public/research/index.html	/^<h1 id="research">Research<\/h1>$/;"	h
+Research | Tristan Abbott	public/research/index.html	/^    <title>Research | Tristan Abbott<\/title>$/;"	j
+Running	content/wiki/am4_on_gaea.md	/^## Running$/;"	s	chapter:Running AM4 on Gaea
+Running	content/wiki/shield_on_gaea.md	/^## Running$/;"	s	chapter:Running SHiELD on Gaea
+Running AM4 on Gaea	content/wiki/am4_on_gaea.md	/^# Running AM4 on Gaea$/;"	c
+Running SHiELD on Gaea	content/wiki/shield_on_gaea.md	/^# Running SHiELD on Gaea$/;"	c
+Running models	content/wiki/_index.md	/^## Running models$/;"	s	chapter:Wiki
+Second-level header	themes/xmin/exampleSite/content/post/2016-02-14-hello-markdown.md	/^## Second-level header$/;"	s	chapter:2. Sample Text
+Tags	public/tags/index.html	/^<h1>Tags<\/h1>$/;"	h
+Tags | Tristan Abbott	public/tags/index.html	/^    <title>Tags | Tristan Abbott<\/title>$/;"	j
+Third-level header	themes/xmin/exampleSite/content/post/2016-02-14-hello-markdown.md	/^### Third-level header$/;"	S	section:2. Sample Text""Second-level header
+Wiki	content/wiki/_index.md	/^# Wiki$/;"	c
+_Keep it simple, but not simpler_	themes/xmin/README.md	/^## _Keep it simple, but not simpler_$/;"	s	chapter:HUGO XMIN
+_Keep it simple, but not simpler_	themes/xmin/exampleSite/content/_index.markdown	/^## _Keep it simple, but not simpler_$/;"	s	chapter:HUGO XMIN
+a	public/css/style.css	/^a {$/;"	s
+a	static/css/style.css	/^a {$/;"	s
+atom	public/categories/index.xml	/^<rss version="2.0" xmlns:atom="http:\/\/www.w3.org\/2005\/Atom">$/;"	n	uri:http://www.w3.org/2005/Atom
+atom	public/index.xml	/^<rss version="2.0" xmlns:atom="http:\/\/www.w3.org\/2005\/Atom">$/;"	n	uri:http://www.w3.org/2005/Atom
+atom	public/tags/index.xml	/^<rss version="2.0" xmlns:atom="http:\/\/www.w3.org\/2005\/Atom">$/;"	n	uri:http://www.w3.org/2005/Atom
+blockquote	public/css/style.css	/^blockquote {$/;"	s
+blockquote	static/css/style.css	/^blockquote {$/;"	s
+blockquote	themes/xmin/static/css/style.css	/^blockquote {$/;"	s
+body	public/css/fonts.css	/^body {$/;"	s
+body	public/css/style.css	/^body {$/;"	s
+body	static/css/fonts.css	/^body {$/;"	s
+body	static/css/style.css	/^body {$/;"	s
+body	themes/xmin/static/css/fonts.css	/^body {$/;"	s
+body	themes/xmin/static/css/style.css	/^body {$/;"	s
+code	public/css/fonts.css	/^code {$/;"	s
+code	public/css/style.css	/^code { background: #f9f9f9; }$/;"	s
+code	static/css/fonts.css	/^code {$/;"	s
+code	static/css/style.css	/^code { background: #f9f9f9; }$/;"	s
+code	themes/xmin/static/css/fonts.css	/^code {$/;"	s
+code	themes/xmin/static/css/style.css	/^code { background: #f9f9f9; }$/;"	s
+config.toml	themes/xmin/exampleSite/content/about.md	/^# config.toml$/;"	c
+div.col	public/css/style.css	/^div.col {$/;"	c
+div.col	static/css/style.css	/^div.col {$/;"	c
+div.row:after	public/css/style.css	/^div.row:after {$/;"	c
+div.row:after	static/css/style.css	/^div.row:after {$/;"	c
+footer	public/css/style.css	/^.article-meta, footer { text-align: center; }$/;"	s
+footer	static/css/style.css	/^.article-meta, footer { text-align: center; }$/;"	s
+footer	themes/xmin/static/css/style.css	/^.menu, .article-meta, footer { text-align: center; }$/;"	s
+footer a	public/css/style.css	/^footer a { text-decoration: none; }$/;"	s
+footer a	static/css/style.css	/^footer a { text-decoration: none; }$/;"	s
+footer a	themes/xmin/static/css/style.css	/^footer a { text-decoration: none; }$/;"	s
+h1	public/css/style.css	/^h1 {$/;"	s
+h1	static/css/style.css	/^h1 {$/;"	s
+hr	public/css/style.css	/^hr {$/;"	s
+hr	static/css/style.css	/^hr {$/;"	s
+hr	themes/xmin/static/css/style.css	/^hr {$/;"	s
+iframe	public/css/style.css	/^img, iframe, video { max-width: 100%; }$/;"	s
+iframe	static/css/style.css	/^img, iframe, video { max-width: 100%; }$/;"	s
+iframe	themes/xmin/static/css/style.css	/^img, iframe, video { max-width: 100%; }$/;"	s
+img	public/css/style.css	/^img, iframe, video { max-width: 100%; }$/;"	s
+img	static/css/style.css	/^img, iframe, video { max-width: 100%; }$/;"	s
+img	themes/xmin/static/css/style.css	/^img, iframe, video { max-width: 100%; }$/;"	s
+in-the-media	public/media/index.html	/^<h1 id="in-the-media">In the media<\/h1>$/;"	I
+main	themes/xmin/static/css/style.css	/^main { hyphens: auto; }$/;"	s
+ns705935650101	public/sitemap.xml	/^  xmlns:xhtml="http:\/\/www.w3.org\/1999\/xhtml">$/;"	n	uri:http://www.sitemaps.org/schemas/sitemap/0.9
+p	public/css/style.css	/^p {$/;"	s
+p	static/css/style.css	/^p {$/;"	s
+pre	public/css/style.css	/^pre {$/;"	s
+pre	static/css/style.css	/^pre {$/;"	s
+pre	themes/xmin/static/css/style.css	/^pre {$/;"	s
+pre code	public/css/style.css	/^pre code { background: none; }$/;"	s
+pre code	static/css/style.css	/^pre code { background: none; }$/;"	s
+pre code	themes/xmin/static/css/style.css	/^pre code { background: none; }$/;"	s
+publications	public/publications/index.html	/^<h1 id="publications">Publications<\/h1>$/;"	I
+research	public/research/index.html	/^<h1 id="research">Research<\/h1>$/;"	I
+slider-simple	public/d3/coriolis.html	/^    <div class="col-sm-3"><div id="slider-simple"><\/div>$/;"	I
+slider-simple	static/d3/coriolis.html	/^    <div class="col-sm-3"><div id="slider-simple"><\/div>$/;"	I
+table	public/css/style.css	/^table {$/;"	s
+table	static/css/style.css	/^table {$/;"	s
+table	themes/xmin/static/css/style.css	/^table {$/;"	s
+table thead th	public/css/style.css	/^table thead th { border-bottom: 1px solid #ddd; }$/;"	s
+table thead th	static/css/style.css	/^table thead th { border-bottom: 1px solid #ddd; }$/;"	s
+table thead th	themes/xmin/static/css/style.css	/^table thead th { border-bottom: 1px solid #ddd; }$/;"	s
+td	public/css/style.css	/^th, td { padding: 5px; }$/;"	s
+td	static/css/style.css	/^th, td { padding: 5px; }$/;"	s
+td	themes/xmin/static/css/style.css	/^th, td { padding: 5px; }$/;"	s
+tfoot	public/css/style.css	/^thead, tfoot, tr:nth-child(even) { background: #eee; }$/;"	s
+tfoot	static/css/style.css	/^thead, tfoot, tr:nth-child(even) { background: #eee; }$/;"	s
+tfoot	themes/xmin/static/css/style.css	/^thead, tfoot, tr:nth-child(even) { background: #eee; }$/;"	s
+th	public/css/style.css	/^th, td { padding: 5px; }$/;"	s
+th	static/css/style.css	/^th, td { padding: 5px; }$/;"	s
+th	themes/xmin/static/css/style.css	/^th, td { padding: 5px; }$/;"	s
+thead	public/css/style.css	/^thead, tfoot, tr:nth-child(even) { background: #eee; }$/;"	s
+thead	static/css/style.css	/^thead, tfoot, tr:nth-child(even) { background: #eee; }$/;"	s
+thead	themes/xmin/static/css/style.css	/^thead, tfoot, tr:nth-child(even) { background: #eee; }$/;"	s
+tr:nth-child(even)	public/css/style.css	/^thead, tfoot, tr:nth-child(even) { background: #eee; }$/;"	s
+tr:nth-child(even)	static/css/style.css	/^thead, tfoot, tr:nth-child(even) { background: #eee; }$/;"	s
+tr:nth-child(even)	themes/xmin/static/css/style.css	/^thead, tfoot, tr:nth-child(even) { background: #eee; }$/;"	s
+value-simple	public/d3/coriolis.html	/^    <div class="col-sm-3"><p id="value-simple"><\/p><\/div>$/;"	I
+value-simple	static/d3/coriolis.html	/^    <div class="col-sm-3"><p id="value-simple"><\/p><\/div>$/;"	I
+video	public/css/style.css	/^img, iframe, video { max-width: 100%; }$/;"	s
+video	static/css/style.css	/^img, iframe, video { max-width: 100%; }$/;"	s
+video	themes/xmin/static/css/style.css	/^img, iframe, video { max-width: 100%; }$/;"	s
+vis	public/d3/coriolis.html	/^    <div id="vis" style="text-align:center;"><\/div>$/;"	I
+vis	static/d3/coriolis.html	/^    <div id="vis" style="text-align:center;"><\/div>$/;"	I
+xhtml	public/sitemap.xml	/^  xmlns:xhtml="http:\/\/www.w3.org\/1999\/xhtml">$/;"	n	uri:http://www.w3.org/1999/xhtml
+xi	content/wiki/default.xml.compile_only.xml	/^<experimentSuite rtsVersion="4" xmlns:xi="http:\/\/www.w3.org\/2003\/XInclude">$/;"	n	uri:http://www.w3.org/2003/XInclude
+{{ . }}	themes/xmin/layouts/_default/single.html	/^{{ with .Params.author }}<h2 class="author">{{ . }}<\/h2>{{ end }}$/;"	i
+{{ .Date.Format "2006/01/02" }}	themes/xmin/layouts/_default/single.html	/^{{ if (gt .Params.date 0) }}<h2 class="date">{{ .Date.Format "2006\/01\/02" }}<\/h2>{{ end }}$/;"	i
+{{ .Title | markdownify }}	themes/xmin/layouts/_default/list.html	/^<h1>{{ .Title | markdownify }}<\/h1>$/;"	h
+{{ .Title | markdownify }}	themes/xmin/layouts/_default/single.html	/^<h1><span class="title">{{ .Title | markdownify }}<\/span><\/h1>$/;"	h
+{{ .Title }}	themes/xmin/layouts/_default/terms.html	/^<h1>{{ .Title }}<\/h1>$/;"	h
+{{ .Title }} | {{ .Site.Title }}	layouts/partials/header.html	/^    <title>{{ .Title }} | {{ .Site.Title }}<\/title>$/;"	j
+{{ .Title }} | {{ .Site.Title }}	themes/xmin/layouts/partials/header.html	/^    <title>{{ .Title }} | {{ .Site.Title }}<\/title>$/;"	j
